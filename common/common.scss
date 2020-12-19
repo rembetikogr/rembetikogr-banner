@@ -1,0 +1,267 @@
+// Theme: Rails On Maui
+// Target: common scss
+// Last Edited: 2020-04-28 13:35:58 UTC
+
+.Header {
+  height: 52px;
+  padding: 0 8px;
+  overflow: hidden;
+  border-bottom: 1px solid #eef4f5;
+}
+
+.Header__NaviWrapper {
+  height: 70px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.HeroScreen__SocialMedia {
+  margin-top: 5%;
+  font-size: 1.9em; // 1.7511em;
+  line-height: 1.4;
+}
+
+.HeroScreen__SocialMediaItem .d-icon {
+  color: var(--primary);
+}
+
+.HeroScreen__SocialMediaItem .icon:hover .d-icon {
+  color: var(--primary-medium);
+}
+
+.HeroScreen__SocialMediaItem {
+  margin-left: 10px;
+}
+
+.Navi {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .Navi {
+    padding: 16px 2px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .HeroScreen__SocialMedia {
+    display: none;
+  }
+}
+
+.Navi__Left {
+  display: flex;
+}
+
+.Navi__Link,
+.Navi__Link:visited {
+  margin: 0 24px 0 0;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a.Navi__LinkBig:hover,
+a.Navi__LinkSmall:hover {
+  background: var(--tertiary-medium); // #EE2B16;
+}
+
+.Navi__Button,
+.Navi__Button:visited,
+.Navi__Button:hover {
+  color: #fff;
+  background: var(--tertiary-low); // #EE2B16;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 32px;
+}
+
+.HeroScreen {
+  display: none;
+  position: relative;
+}
+
+.navigation-topics .HeroScreen {
+  background-color: var(--tertiary-low);
+  border-radius: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 28px 64px 38px;
+}
+
+.HeroScreen__leftCol {
+  margin-right: 48px;
+  max-width: 502px;
+}
+
+.HeroScreen__Title {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.HeroScreen__Text {
+  display: block;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.heroScreen__RightCol {
+  display: flex;
+  width: 416px;
+}
+
+.heroScreen__RightCol a {
+  color: var(--primary); // #343D3F;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.Navi__LinkBig {
+  display: flex;
+  width: 240px;
+  height: 80px;
+  margin: 16px 16px 16px 0;
+  font-size: 18px;
+  line-height: 24px;
+  background: var(--header_background);
+  color: #fff;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.LinkBig__Icon {
+  display: flex;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin-left: 16px;
+}
+
+.LinkBig__Icon svg {
+  width: 56px;
+  height: 56px;
+}
+
+.LinkBig__Title {
+  margin-left: 16px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.heroScreen__NaviAdditional {
+  position: relative;
+}
+
+.Navi__LinkSmall {
+  display: flex;
+  width: 160px;
+  height: 56px;
+  margin: 16px 0;
+  font-size: 18px;
+  line-height: 24px;
+  background: var(--header_background); // #467ca0;
+  color: #fff;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.LinkSmall__Icon {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+}
+
+.LinkSmall__Icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.LinkSmall__Title {
+  margin-left: 12px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.heroScreen__NaviAdditional .Navi__LinkMore {
+  position: absolute;
+  right: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 980px) {
+  .navigation-topics .HeroScreen {
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 24px 24px 40px;
+  }
+
+  .HeroScreen__leftCol {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .HeroScreen__Title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  .HeroScreen__Text {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .heroScreen__RightCol {
+    width: 100%;
+    flex-flow: column nowrap;
+  }
+
+  .Navi__LinkBig,
+  .Navi__LinkSmall {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    margin: 0 0 8px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .LinkBig__Icon,
+  .LinkSmall__Icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+  }
+
+  .LinkBig__Title,
+  .LinkSmall__Title {
+    margin-left: 12px;
+    font-size: 16px;
+  }
+
+  .LinkBig__Icon svg,
+  .LinkSmall__Icon svg {
+    width: 32px;
+    height: 32px;
+  }
+}
